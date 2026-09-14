@@ -107,35 +107,14 @@ npm run dev
 
 This demo stores:
 
-- metadata in `data/store.json`
+- metadata in 'MinIO via Docker'
 - uploaded images in `public/uploads`
 
-This is good for learning and local demos, but it is not production-grade storage. For production, use object storage like S3 or GCP Cloud Storage.
+It is not production-grade storage. For production, use object storage like S3 or GCP Cloud Storage.
 
-## Deployment steps
+## Deployment 
 
-This project is ready for deployment on Vercel.
-
-### Option 1: Vercel
-
-1. Push the project to GitHub.
-2. Import the repository into Vercel.
-3. Deploy the app.
-4. Set the production branch and domain.
-
-### Option 2: Self-hosted Node server
-
-1. Build the app:
-
-```bash
-npm run build
-```
-
-2. Start the production server:
-
-```bash
-npm run start
-```
+Deployed Link : https://the-demo-gallery.vercel.app/ 
 
 ### Production improvements to consider
 
