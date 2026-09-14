@@ -1,4 +1,4 @@
-﻿# Photo Sharing Platform
+﻿# The Dream Gallery - Photo Sharing Platform
 
 A beginner-friendly full-stack photo sharing application built with Next.js, TypeScript and Docker based storage system.
 
