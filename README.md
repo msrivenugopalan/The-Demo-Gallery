@@ -42,7 +42,7 @@ If you are new to full-stack development, this project is organized so you can f
 flowchart LR
     User[Admin / Team Member / Customer] --> Frontend[Next.js Frontend]
     Frontend --> API[Next.js API Routes]
-    API --> Store[MinIO(docker based storage)]
+    API --> Store[MinIO]
     API --> Files[Local File Uploads]
     Store --> Metadata[Event, Photo, Gallery Metadata]
     Frontend --> Gallery[PIN-protected Gallery Page]
