@@ -1,6 +1,6 @@
 ﻿# Photo Sharing Platform
 
-A beginner-friendly full-stack photo sharing application built with Next.js, TypeScript, and a local JSON file store.
+A beginner-friendly full-stack photo sharing application built with Next.js, TypeScript and Docker based storage system.
 
 ## Project overview
 
@@ -19,7 +19,7 @@ The app is intentionally modular so a beginner can follow the code and learn the
 - Frontend: Next.js 16 with App Router and TypeScript
 - Styling: Tailwind CSS
 - Backend: Next.js API routes
-- Data storage: Local JSON file for demo data, file system uploads in `public/uploads`
+- Data storage: MinIO (S3-compatible object storage)
 - Testing: Vitest
 
 ## Recommended learning path
