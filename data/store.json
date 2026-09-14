@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": "admin-user",
+      "name": "Demo Admin",
+      "email": "admin@demo.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2026-09-11T18:00:00.000Z"
+    },
+    {
+      "id": "team-user",
+      "name": "Demo Team Member",
+      "email": "team@demo.com",
+      "password": "team123",
+      "role": "team",
+      "createdAt": "2026-09-11T18:00:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-wedding",
+      "name": "Arjun & Priya Wedding",
+      "description": "A collaborative event gallery for the team and customers.",
+      "adminId": "admin-user",
+      "memberIds": [
+        "team-user"
+      ],
+      "createdAt": "2026-09-11T18:00:00.000Z"
+    },
+    {
+      "id": "ce2de8a1-e3bd-4078-82ef-c269f003e650",
+      "name": "Animals",
+      "description": "Cute photographs of pet animals",
+      "adminId": "admin-user",
+      "memberIds": [
+        "team-user"
+      ],
+      "createdAt": "2026-09-14T06:32:57.276Z"
+    },
+    {
+      "id": "d7e71d52-5e09-428e-86fd-326caec0b61a",
+      "name": "Anime",
+      "description": "Anime Characters Wallpaper",
+      "adminId": "admin-user",
+      "memberIds": [
+        "team-user"
+      ],
+      "createdAt": "2026-09-14T09:33:57.295Z"
+    }
+  ],
+  "photos": [
+    {
+      "id": "photo-1",
+      "eventId": "event-wedding",
+      "uploadedBy": "team-user",
+      "filename": "wedding-sample-1.jpg",
+      "storageUrl": "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80",
+      "fileSize": 146000,
+      "createdAt": "2026-09-11T18:00:00.000Z"
+    },
+    {
+      "id": "photo-2",
+      "eventId": "event-wedding",
+      "uploadedBy": "team-user",
+      "filename": "wedding-sample-2.jpg",
+      "storageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80",
+      "fileSize": 176000,
+      "createdAt": "2026-09-11T18:00:00.000Z"
+    },
+    {
+      "id": "3fdb35c4-0010-43bb-aa6a-2325eb89ed45",
+      "eventId": "ce2de8a1-e3bd-4078-82ef-c269f003e650",
+      "uploadedBy": "team-user",
+      "filename": "premium-photo-1694819488591-a43907d1c5cc.avif",
+      "storageUrl": "http://127.0.0.1:9000/photo-sharing-platform/photos/b6690db9-c5ee-40b7-a8a4-1b72e50098a2-premium-photo-1694819488591-a43907d1c5cc.avif",
+      "storageKey": "photos/b6690db9-c5ee-40b7-a8a4-1b72e50098a2-premium-photo-1694819488591-a43907d1c5cc.avif",
+      "fileSize": 444269,
+      "createdAt": "2026-09-14T09:31:24.141Z"
+    },
+    {
+      "id": "d4325dc3-8769-4e4a-83b0-6f69bd2520a6",
+      "eventId": "ce2de8a1-e3bd-4078-82ef-c269f003e650",
+      "uploadedBy": "team-user",
+      "filename": "kitten.png",
+      "storageUrl": "http://127.0.0.1:9000/photo-sharing-platform/photos/2559b710-2ab8-4323-a6f4-b0db4fb168e7-kitten.png",
+      "storageKey": "photos/2559b710-2ab8-4323-a6f4-b0db4fb168e7-kitten.png",
+      "fileSize": 132907,
+      "createdAt": "2026-09-14T09:31:43.326Z"
+    },
+    {
+      "id": "e1ae8813-8f7d-4610-ae1d-8f5f5f0045d0",
+      "eventId": "d7e71d52-5e09-428e-86fd-326caec0b61a",
+      "uploadedBy": "team-user",
+      "filename": "levi.jpg",
+      "storageUrl": "http://127.0.0.1:9000/photo-sharing-platform/photos/f5097f67-b9d7-46e4-bbc1-2894fb63dbae-levi.jpg",
+      "storageKey": "photos/f5097f67-b9d7-46e4-bbc1-2894fb63dbae-levi.jpg",
+      "fileSize": 6876,
+      "createdAt": "2026-09-14T09:35:15.524Z"
+    }
+  ],
+  "galleries": [
+    {
+      "id": "gallery-demo",
+      "eventId": "event-wedding",
+      "title": "Arjun & Priya Wedding Gallery",
+      "pin": "482917",
+      "selectedPhotoIds": [
+        "photo-1",
+        "photo-2"
+      ],
+      "createdAt": "2026-09-11T18:00:00.000Z"
+    },
+    {
+      "id": "7e79b452-7b12-4fba-9200-feed434c2f13",
+      "eventId": "ce2de8a1-e3bd-4078-82ef-c269f003e650",
+      "title": "Animals",
+      "pin": "5678",
+      "selectedPhotoIds": [],
+      "createdAt": "2026-09-14T06:40:26.507Z"
+    },
+    {
+      "id": "8f8ed8d2-01a9-4134-91f9-ab2f4e74dbbc",
+      "eventId": "d7e71d52-5e09-428e-86fd-326caec0b61a",
+      "title": "Anime Wallpapers",
+      "pin": "2468",
+      "selectedPhotoIds": [
+        "e1ae8813-8f7d-4610-ae1d-8f5f5f0045d0"
+      ],
+      "createdAt": "2026-09-14T09:37:29.746Z"
+    }
+  ]
+}
