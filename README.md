@@ -22,6 +22,11 @@ The app is intentionally modular so a beginner can follow the code and learn the
 - Data storage: MinIO (S3-compatible object storage)
 - Testing: Vitest
 
+## Demo credentials
+
+- Admin: `admin@demo.com` / `admin123`
+- Team member: `team@demo.com` / `team123`
+
 ## Recommended learning path
 
 If you are new to full-stack development, this project is organized so you can follow the layers in order:
@@ -37,7 +42,7 @@ If you are new to full-stack development, this project is organized so you can f
 flowchart LR
     User[Admin / Team Member / Customer] --> Frontend[Next.js Frontend]
     Frontend --> API[Next.js API Routes]
-    API --> Store[Local JSON Store]
+    API --> Store[MinIO(docker based storage)]
     API --> Files[Local File Uploads]
     Store --> Metadata[Event, Photo, Gallery Metadata]
     Frontend --> Gallery[PIN-protected Gallery Page]
@@ -45,7 +50,7 @@ flowchart LR
 
 ## Database design (demo version)
 
-The project uses a lightweight JSON-backed store for simplicity. In a production application, this would be replaced with PostgreSQL or MongoDB.
+The project uses a lightweight docker based store for simplicity. In a production application, this would be replaced with PostgreSQL or MongoDB.
 
 ### Entities
 
@@ -97,11 +102,6 @@ npm run dev
 
 - Admin / team login: http://localhost:3000
 - Customer gallery example: http://localhost:3000/gallery/<gallery-id>
-
-## Demo credentials
-
-- Admin: `admin@demo.com` / `admin123`
-- Team member: `team@demo.com` / `team123`
 
 ## Important notes about persistence
 
@@ -173,3 +173,8 @@ The current tests cover:
 - Create admin-only photo selection and bulk actions
 - Improve gallery API security with signed URLs and expiration
 - Add CI/CD and automated deployment
+
+## Developed by
+
+## Srivenugopalan M
+Passionate towards Software Development and Embedded Systems
